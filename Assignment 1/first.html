@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript program to display the current day and time</title>
+    <h2>JavaScript program to display the current day and time</h2>
+</head>
+
+<body onload="myFunction(),startTime()">
+    <script>
+        function myFunction() {
+            var d = new Date();
+            var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+            var a = days[d.getDay()];
+            document.getElementById("demo").innerHTML = "Today is : " + a;
+        }
+    </script>
+    <div id="demo"></div>
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+
+            document.getElementById('txt').innerHTML = "Current time is : " + h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500)
+            ''
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = 0 + i
+            };
+            return i;
+        }
+    </script>
+    <div id='txt'></div>
+</body>
+
+</html>
