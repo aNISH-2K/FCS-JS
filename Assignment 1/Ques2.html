@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("var declarations are globally scoped or function scoped while let and const are block scoped.".bold());
+        document.write("<br/>");
+        document.write("var variables can be updated and re-declared within its scope. let variables can be updated but not re-declared const variables can neither be updated nor re-declared.".bold());
+        document.write("<br/>");
+        document.write("They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized".bold());
+        document.write("<br/>");
+        document.write("while var and let can be declared without being initialized, const must be initialized during declaration.".bold());
+
+        var a; //declaration
+        a = 5; // initialization
+        document.write("a:");
+        document.write(a);
+        document.write("<br/>");
+        let b; //declaration 
+        b = 10; //initialization
+        document.write("b:");
+        document.write(b);
+        document.write("<br/>");
+        var c = 5; //declaration plus initialization in one step
+        document.write("c:");
+        document.write(c);
+        document.write("<br/>");
+        let d = 5; //declaration plus initialization in one step
+        document.write("d:");
+        document.write(d);
+        document.write("<br/>");
+        const h = 5;
+        document.write("h:");
+        document.write(h);
+        document.write("<br/>");
+        document.write("1: when we start our variable with var, let is called declaration. e.g: var a; or let a;".bold());
+        document.write("<br/>");
+        document.write("2: when we start our variable and assigning value it is declaration and initialization with value".bold());
+        document.write("<br/>");
+        document.write("3: const cannot be declared only, you need to initialize it with declaration".bold());
+        document.write("<br/>");
+    </script>
+</body>
+
+</html>
