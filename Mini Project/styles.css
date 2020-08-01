@@ -1,0 +1,57 @@
+html,
+body {
+    height: 100%;
+    width: 99.7%;
+    position: absolute;
+    background-color: teal;
+    background-image: url('https://wallpapercave.com/wp/wp6244231.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.container {
+    text-align: center;
+}
+
+p {
+    color: orangered;
+    font-family: 'ALGERIAN';
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    padding: 10px;
+    padding-right: 30px;
+}
+
+p :hover {
+    text-decoration: none;
+}
+
+#gen {
+    outline: none;
+    text-decoration: none;
+    opacity: 0.6;
+    margin-top: 0px;
+    background-color: black;
+    color: white;
+    border: thin solid teal;
+    height: 30px;
+    width: 100px;
+    border-radius: 2px;
+    transition: 0.5s;
+    padding-bottom: 5px;
+}
+
+#gen:hover {
+    background-color: palegreen;
+    color: black;
+    border: thin solid black;
+    opacity: 0.8;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #796381;
+}
